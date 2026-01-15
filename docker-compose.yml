@@ -1,0 +1,7 @@
+services:
+  app:
+    build: .
+    ports:
+      - "${MY_PORT}:80"
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html
